@@ -6,39 +6,83 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>R.D. Ancheta Surveying Services</title>
     <link rel="icon" href="/images1/favicon.ico" type="images/x-icon">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
    
-   <header class="header">
+<header class="header">
 
-      <section class="flex">
-   
-         <a href="index.html" class="logo"><img id="logo" src="/images1/name.png"></a>
-   
-         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Services</a>
-            <a href="contact.html">Contact</a>
-         </nav>
-   
-         <div class="icons">
-            <a href="about.html"><div id="user-btn" class="fas fa-user"></div></a>
-            <div id="menu-btn" class="fas fa-bars"></div>
+   <section class="flex">
+
+      <a href="index.html" class="logo"><img id="logo" src="/images1/name.png"></a>
+
+      <nav class="navbar">
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="menu.html">Services</a>
+         <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="icons">
+         <a href="about.html"><div id="user-btn" class="fas fa-user"></div></a>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+
+   </section>
+
+</header>
+
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>Hello, Kamusta</span>
+               <h3>Geodetic Engineer at your Service</h3>
+               <a href="menu.html" class="btn">Our Services</a>
+            </div>
+            <div class="image">
+               <img src="/images1/undraw_hello_re_3evm (1).svg" alt="">
+            </div>
          </div>
-   
-   
-      </section>
-   
-   </header>
 
-<div class="heading">
-   <h3>Services</h3>
-   <p><a href="index.html">Home </a> <span> / Services</span></p>
-</div>
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>For private Land Surveys:</span>
+               <h3>Relocation, Subdivision, Consolidation</h3>
+               <a href="menu.html" class="btn">Our Services</a>
+            </div>
+            <div class="image">
+               <img src="/images1/undraw_image_viewer_re_7ejc.svg" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>We cater locations in</span>
+               <h3>Region III and NCR</h3>
+               <a href="menu.html" class="btn">Our Services</a>
+            </div>
+            <div class="image">
+               <img src="/images1/undraw_drag_re_shc0.svg" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
 
 <section class="products">
 
@@ -94,37 +138,13 @@
         
       </form>
 
-      <form accept="" method="post" class="box">
-         <a href="https://www.facebook.com/RDAnchetaSurveying/" class="fas fa-eyemess"></a>
-         <a href="contact.html" class="fas fa-call"></a>
-         <img src="/images1/road.jpg" alt="">
-         <div class="name">Road/Highway Surveys and Profiling</div>
-        
-      </form>
-
-      <form accept="" method="post" class="box">
-         <a href="https://www.facebook.com/RDAnchetaSurveying/" class="fas fa-eyemess"></a>
-         <a href="contact.html" class="fas fa-call"></a>
-         <img src="/images1/orig.jpg" alt="">
-         <div class="name">Original Surveys</div>
-        
-      </form>
-      <form accept="" method="post" class="box">
-         <a href="https://www.facebook.com/RDAnchetaSurveying/" class="fas fa-eyemess"></a>
-         <a href="contact.html" class="fas fa-call"></a>
-         <img src="/images1/plan.jpg" alt="">
-         <div class="name">Sketch, Location Plan and Vicinity Map</div>
-        
-      </form>
-
    </div>
 
+   <div class="more-btn">
+      <a href="menu.html" class="btn">veiw all</a>
+   </div>
 
 </section>
-
-
-
-
 
 
 
@@ -180,11 +200,40 @@
 
 </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="loader">
-   <img src="/images1/loader.gif" alt="">
+   <img src="/dimages1/loader.gif" alt="">
 </div>
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 <script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
 
 </body>
 </html>
